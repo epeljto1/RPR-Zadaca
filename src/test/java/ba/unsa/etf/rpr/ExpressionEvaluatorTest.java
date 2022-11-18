@@ -23,4 +23,13 @@ public class ExpressionEvaluatorTest
         double e = 0;
         Assert.assertEquals(e,a);
     }
+
+    @Test
+    public void evaluateTest3()
+    {
+        String s3 = new String("( ( ( ( 100 * 100 ) - ( 99 * 100 ) ) / 50 ) * sqrt ( 100 ) )");
+        double a = ExpressionEvaluator.evaluate(s3);
+        double e = 20;
+        Assert.assertEquals(e,a);
+    }
 }
