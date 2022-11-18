@@ -9,9 +9,18 @@ public class ExpressionEvaluatorTest
 {
     @Test
     public void evaluateTest1() {
-        String s1 = new String ("( 1 + ( ( 2 + 3 ) * ( 4 * 5 ) ) )") ;
+        String s1 = new String("( 1 + ( ( 2 + 3 ) * ( 4 * 5 ) ) )");
         double a = ExpressionEvaluator.evaluate(s1);
         double e = 101;
+        Assert.assertEquals(e,a);
+    }
+
+    @Test
+    public void evaluateTest2()
+    {
+        String s2 = new String("( 5 - ( ( 25 - 5 ) / ( 2 * 2 ) ) )");
+        double a = ExpressionEvaluator.evaluate(s2);
+        double e = 0;
         Assert.assertEquals(e,a);
     }
 }
