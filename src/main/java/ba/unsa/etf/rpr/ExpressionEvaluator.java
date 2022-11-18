@@ -14,8 +14,7 @@ public class ExpressionEvaluator {
         for(int i = 0; i < subs.length ; i++) {
             if (subs[i].equals("(") || subs[i].equals(")") || subs[i].equals("+") || subs[i].equals("-")
                     || subs[i].equals("*") || subs[i].equals("/") || subs[i].equals("sqrt") ||
-                    subs[i].matches("-?\\d+(\\.\\d+)?"))
-                valid = true;
+                    subs[i].matches("-?\\d+(\\.\\d+)?")) ;
             else {
                 valid = false;
                 break;
