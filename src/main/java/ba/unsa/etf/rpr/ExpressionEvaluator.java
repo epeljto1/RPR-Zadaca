@@ -22,10 +22,6 @@ public class ExpressionEvaluator {
             }
         }
 
-        for(int i = 1; i < subs.length ; i++) {
-            if(subs[i].equals("sqrt") && subs[i-1].equals("("))
-                valid = false;
-        }
         if (valid == false)
             throw new RuntimeException("Invalid input!");
 
