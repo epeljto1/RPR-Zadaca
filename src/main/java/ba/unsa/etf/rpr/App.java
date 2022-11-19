@@ -15,7 +15,7 @@ public class App
             System.out.println("Evalution of expression is: " + ExpressionEvaluator.evaluate(s));
         }
         catch (RuntimeException e) {
-            System.out.println(e);
+            System.out.println(e.getMessage());
         }
     }
 }
